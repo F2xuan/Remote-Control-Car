@@ -1,15 +1,22 @@
-# Remote Control Car
+# About
 
-This innovative remote-controlled car is equipped with four powerful DC motors. The car establishes a Wi-Fi access point, then it creates a TCP server on port 8080. The Android application provides user interface and connects to the car server to transmit commands. The car processes and executes these commands. Notably, the Android application leverages the SpeechRecognizer API to convert speech input into actionable commands executable by the car which allows the car to be controlled by voice input.
+This remote-controlled four wheel car system is equipped with four powerful DC motors that can be controlled via an Android application installable on most Android devices. The car establishes a Wi-Fi access point, then it creates a TCP socket server on port 8080. The Android application connects to that Wi-Fi access point and to the TCP socket server. The car listens and executes commands sent by the Android application. The Android applicaton can control the direction of the car and adjust the speed of the DC motors. The Android application also uses the SpeechRecognizer API to convert speech input into commands executable by the car which allows the car to be controlled by voice input.
 
-<div align="center">
-    <img src="RemoteControlCarImage.jpg" width="700">
-</div>
+## Functions
 
-### Materials Used
+- Automatic acceleration
+- 4-speed selection
+- Voice input command
+- Horn function
+- LED headlights
+- LED signal lights
+- LED hazard lights
+- Switch to turn ON/OFF the car
 
-- 4x TT Gear DC Motors
-- ESP32 with antenna
+## Materials Used
+
+- 4 TT Gear DC Motors
+- ESP32 with detachable antenna
 - L298n motor driver
 - 3x 5800mah 18650 3.7v Lithium-ion battery
 - 3 slot battery holder for 18650 batteries
@@ -19,3 +26,27 @@ This innovative remote-controlled car is equipped with four powerful DC motors. 
 - Buzzer
 - ON/OFF switch
 - Styrofoam
+
+## Four wheels remote controlled car
+
+<div>
+    <img src="RemoteControlCarImage.jpg" width="600">
+</div>
+
+## Android application control panel
+
+The source code for the Android app can be found [here](https://github.com/johndeweyzxc/Remote-Control-Car-Controller?tab=readme-ov-file)
+
+<div>
+    <img src="RCCarControllerImage.jpg" width="600">
+</div>
+
+## Abbreviations
+
+- HL - Headlights
+- RTV - Realtime Voice
+- SL - Signal Left
+- SR - Signal Right
+- H - Horn
+- B - Break
+- N - Neutral
